@@ -1,0 +1,124 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+
+<div class="d-flex justify-content-around  na">
+    
+<div class="d-flex m-4  justify-content-center ">
+    <img src="./images/logo@2x.png" alt="">
+    <div >
+    <h1 class="site-description fs-4">weather</h1>
+    <p class="site-description " >tagline goes here</p>
+</div>
+</div>
+<div class="m-4 d-flex justify-content-center align-content-center ">
+    <ul class="nav nav-pills d-flex justify-content-center align-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Contacts</a>
+      </li>
+        
+      </ul>
+    </div>
+
+
+
+
+      </div>
+      <section class="hero-section d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                
+                    <div class="input-group w-100 p-1 position-relative first d-flex justify-content-between  z-2">
+                        <input type="text" class=" w-75  " placeholder="Enter your city..." id="findLocation" >
+                        <button class="btn btn-primary  px-5 rounded-4 " type="button" id="find">Find</button>
+                    </div>
+              
+            </div>
+        
+          </div>
+          
+      </section>
+      <section id="cards">
+        <div class="container px-5">
+          <div class="row   " id="row-data"> 
+               <div class="col-lg-4 col-md-6 rounded-start-3 ">
+                <div class="forecast-card    text-white h-100">
+                  <div class=" first p-2 d-flex justify-content-between rounded-2 mb-2">
+                  <div id="todayName">Saturday</div>
+                  <div id="todayDate">17 October</div>
+                  </div>
+                  <br>
+                  <div class="p-2">
+                  <div id="location">Cairo</div>
+                     <div class="fs-1"><span id="todayTemp">15.3</span><sup>o</sup>C</div> 
+                     
+                          <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" id="todayIcon" alt="" width="90">
+                     
+                  
+                
+                  <div class="text-primary my-2" id="todayCondition">Partly cloudy</div>
+               <img src="./images/icon-umberella@2x.png" class="w-20 me-1" alt=""><span id="humidity">20%</span>
+              <img src="./images/icon-wind@2x.png" class="w-20 me-1" alt=""><span id="wind-speed">18km/h</span>
+              <img src="./images/icon-compass@2x.png" class="w-20 me-1" alt=""><span id="wind-dir">East</span>
+                  </div>
+              </div>
+          
+    </div> 
+    
+    <div class="  col-lg-4 col-md-6  card-days">
+      
+    </div>
+      <div class="col-lg-4 col-md-6     card-days">
+        
+      </div> 
+      
+     
+           </div>
+       </section>
+      
+
+<div class="div pt-5">
+    <div class="container">
+        <div class="row d-flex  justify-content-around">
+            <div class="col-lg-6 col-md-12 w-75">
+                <div class="input-group w-100 mb-5 p-1 position-relative first d-flex justify-content-between  z-2">
+                    <input type="text" class=" w-75  " placeholder="Enter your email to subscribe..." id="findLocation" >
+                    <button class="btn btn-primary  px-5 rounded-4 " type="button" id="find">Find</button>
+                </div>
+                <p class="text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+           
+        </div>
+    
+      </div>
+</div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
